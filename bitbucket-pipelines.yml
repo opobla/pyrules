@@ -1,0 +1,11 @@
+# The workflow build sphinx documentation and upload it to $DOC_SERVER.
+
+pipelines:
+  default:
+    - step:
+        name: Run pre-commit
+        image: python:3.10-slim
+        script:
+          - pip install pre-commit
+          - apt update && apt install -y git
+          - pre-commit run --all-files
