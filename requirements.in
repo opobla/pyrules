@@ -1,0 +1,11 @@
+# Git commiting rules tool
+commitizen
+
+# Python manage packages
+pip-tools
+
+# Git hooks
+pre-commit
+
+# Documentation
+sphinx
